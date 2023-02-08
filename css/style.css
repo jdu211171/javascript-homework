@@ -56,3 +56,25 @@ body{
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
 }
+input{
+    width: 90px;
+    background-color: var(--border);
+}
+input:hover{
+    background-color: var(--main-color);
+    color: var(--bg);
+}
+.content{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    float: left;
+}
+.right-navbar{
+    background-color: grey;
+    width: 510px;
+    /* height:fit-content; */
+}
