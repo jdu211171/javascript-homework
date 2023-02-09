@@ -1,27 +1,38 @@
 [
-    {
+    {   "id":1,
         "model":"Pinebook Pro",
         "price":340,
         "img":"pc.jpg"
-    },{
+    },
+    {   
+        "id":2,
         "model":"Pinebook Pro",
         "price":340,
         "img":"pc.jpg"
-    },{
+    },
+    {   
+        "id":3,
         "model":"Pinebook Pro",
         "price":340,
         "img":"pc.jpg"
-    },{
+    },
+    {   
+        "id":4,
         "model":"Pinebook Pro",
         "price":340,
         "img":"pc.jpg"
-    },{
+    },
+    {   
+        "id":5,
         "model":"Pinebook Pro",
         "price":340,
         "img":"pc.jpg"
-    },{
+    },
+    {   
+        "id":6,
         "model":"Pinebook Pro",
         "price":340,
         "img":"pc.jpg"
     }
+    
 ]
