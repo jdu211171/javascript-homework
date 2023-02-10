@@ -11,6 +11,5 @@ for (let i = 0; i < product.length; i++) {
                             <input type="button" value="Buy" class="button-right">
                         </div>
                     </div>`;
-                    console.log(newCard);
     content.innerHTML += newCard;
 }
