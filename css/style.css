@@ -19,15 +19,14 @@
     transition: .2s linear;
     color: white;
 }
-html{
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
-}
 body{
     background: var(--bg);
-    width: 820px;
+    width: 100vw;
     margin: auto;
+    /*overflow-x: hidden;*/
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
 }
 .header{
     background: var(--bg);
@@ -75,13 +74,48 @@ input:hover{
 }
 .container{
     display: flex;
+    justify-content: center;
 }
 .content p{
-    text-align: center;
     color: #19f145;
 }
 .right-navbar p{
     font-weight: bold;
     color: black;
     text-align: center;
+}
+.bottom-navbar{
+    display: none;
+}
+.right-shortcut-navbar{
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .right-navbar{
+        display: none;
+    }
+    .bottom-navbar{
+        display: flex;
+    }
+    .bottom-navbar{
+        display: none;
+    }
+}
+@media only screen and (max-width: 635px){
+    .navbar{
+        display: none;
+    }
+    .right-navbar{
+        display: none;
+    }
+    .right-shortcut-navbar{
+        display: none;
+    }
+    .bottom-navbar{
+        z-index: 1;
+        display: flex;
+        background-color: var(--border);
+        justify-content: center;
+    }
+
 }
