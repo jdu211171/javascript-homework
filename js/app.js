@@ -40,11 +40,11 @@ function addToCard(event) {
                     </div>`;
             magazine.append(card);
 
-            let remove = document.querySelector('.remove');
-            remove = remove[remove.length - 1]
+            let remove = document.querySelectorAll('.remove');
+            remove = remove[remove.length - 1];
             remove.addEventListener('click', (e) => {
                 console.log(e);
-                e.target.parentNode.parentNode.remove();
+                e.target.parentNode.parentNode.parentNode.remove();
             });
             break;
         }
