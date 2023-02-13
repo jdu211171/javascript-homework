@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "price": 482.56,
+    "product_model": "StarLite",
+    "cpu_model": "Intel Pentium Silver™",
+    "cpu_version": "N5030",
+    "memory_model": "2400MHz",
+    "memory_version": "8 GB",
+    "display_model": "1080p",
+    "display_version": "11inch",
+    "battery": "8 hrs",
+    "description": "Small but mighty; the perfect companion, wherever you are."
+  },
+  {
+    "id": 2,
+    "price": 482.56,
+    "product_model": "StarBook",
+    "cpu_model": "Ryzen™",
+    "cpu_version": "7",
+    "memory_model": "3200MHz",
+    "memory_version": "64 GB",
+    "display_model": "ARC",
+    "display_version": "14-inch",
+    "battery": "14 hrs",
+    "description": "Minimalist design. Powerful performance. The StarBook propels the open-source experience into the modern era. "
+  },
+  {
+    "id": 3,
+    "price": 1611.75,
+    "product_model": "StarFighter",
+    "cpu_model": "Intel® Core®",
+    "cpu_version": " 12 th",
+    "memory_model": "6400MHz",
+    "memory_version": "64 GB",
+    "display_model": "IPS",
+    "display_version": "16-inch",
+    "battery": "18 hrs",
+    "description": " The StarFighter is an exquisitely crafted, Linux-exclusive laptop that sets a new standard for privacy and performance. With its groundbreaking technology and sleek design, the StarFighter is the ultimate choice for discerning users who demand the very best.\nStar Labs StarFighter laptop\n"
+  },
+  {
+    "id": 4,
+    "price": 482.56,
+    "product_model": "StarLite",
+    "cpu_model": "Intel® Core®",
+    "cpu_version": "12 th",
+    "memory_model": "3200MHz",
+    "memory_version": "64 GB",
+    "display_model": "ARC",
+    "display_version": "14-inch",
+    "battery": "14 hrs",
+    "description": "Minimalist design. Powerful performance. The StarBook propels the open-source experience into the modern era. "
+  },
+  {
+    "id": 5,
+    "price": 1611.75,
+    "product_model": "StarFighter",
+    "cpu_model": "Ryzen™",
+    "cpu_version": "7",
+    "memory_model": "6400MHz",
+    "memory_version": "64 GB",
+    "display_model": "IPS",
+    "display_version": "16-inch",
+    "battery": "18 hrs",
+    "description": " The StarFighter is an exquisitely crafted, Linux-exclusive laptop that sets a new standard for privacy and performance. With its groundbreaking technology and sleek design, the StarFighter is the ultimate choice for discerning users who demand the very best.\nStar Labs StarFighter laptop\n"
+  }
+]
