@@ -23,7 +23,7 @@ body{
     background: var(--bg);
     width: 100vw;
     margin: auto;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 
@@ -67,6 +67,7 @@ input:hover{
 }
 .content{
     display: flex;
+    align-content: flex-start;
     flex-wrap: wrap;
     width: 612px;
     gap: 20px;
@@ -107,4 +108,7 @@ input:hover{
     .fa-icons{
         font-size: 2rem;
     }
+}
+.remove{
+    width: 190px;
 }
