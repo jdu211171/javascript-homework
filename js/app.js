@@ -1,7 +1,7 @@
 import product from "../database/product.json" assert {type: "json"}
 
+localStorage.cart = [];
 
-let j = 1;
 for (let i = 0; i < product.length; i++) {
     let content = document.querySelector('.content');
     let newCard =   `<div class="card">
@@ -10,21 +10,24 @@ for (let i = 0; i < product.length; i++) {
                         </div>
                         <div class="down">
                             <input type="button" value="About" class="button-left">
-                            <input type="button" value="Buy" class="button-right" data-product-id="${j}">
+                            <input type="button" value="Buy" class="button-right" data-product-id="${product[i].id}">
                         </div>
                     </div>`;
     content.innerHTML += newCard;
-    j++;
 }
 
-
+function showTotalPrice() {
+    let totalPrice = 0;
+    cart.forEach((item) => {
+        totalPrice += product[i].id;
+    })
+}
 
 const magazine = document.querySelector('.right-navbar');
 
 document.querySelectorAll('.button-right').forEach(item => {
     item.addEventListener('click', addToCard)
 });
-
 function addToCard(event) {
     let id = event.target.dataset.productId;
     for(let i = 0; i < product.length; i++){
@@ -39,6 +42,7 @@ function addToCard(event) {
                         </div>
                     </div>`;
             magazine.append(card);
+            // localStorage.card.push(product[i].id);
 
             let remove = document.querySelectorAll('.remove');
             remove = remove[remove.length - 1];
