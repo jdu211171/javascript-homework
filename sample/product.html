@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Sample Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: lightslategrey;
+        }
+        .product-box{
+            width: 300px;
+            height: 360px;
+        }
+        span{
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            background: linear-gradient(120deg, rgba(0,201,255,1) 0%, rgba(146,254,157,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
 <body>
   <div class="product-box">
-    <div class="upside">
 
+    <div class="upside">
+        <img src="/media/image/ubuntu.webp" alt="image of laptop">
     </div>
+
+      <div class="middleside">
+        Starlite
+        <span>$482.56</span>
+      </div>
+
     <div class="downside">
 
     </div>
+
   </div>
 </body>
 </html>
