@@ -9,19 +9,47 @@
     <style>
         body{
             background-color: lightslategrey;
+            font-family: 'Poppins', sans-serif;
         }
         .product-box{
             width: 300px;
             height: 360px;
+            border: 1px solid white;
+            position: relative;
+        }
+        .upside img{
+            width: 250px;
+            padding-top: 10px;
+            display: block;
+            margin: auto;
+        }
+        .middleside{
+            color: white;
+            padding-top: 20px;
+            padding-left: 26px;
+            font-size: x-large;
+            font-weight: bold;
         }
         span{
             display: block;
-            font-family: 'Poppins', sans-serif;
-            font-weight: bold;
-            font-size: 30px;
-            background: linear-gradient(120deg, rgba(0,201,255,1) 0%, rgba(146,254,157,1) 100%);
+            font-weight: 900;
+            font-size: 1.6em;
+            background: -webkit-linear-gradient(45deg, #00C9FF, #92FE9D 50%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        small{
+            font-size: 20px;
+        }
+        .downside{
+            width: 300px;
+            height: 53px;
+            background-color: silver;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            line-height: 53px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -34,11 +62,11 @@
 
       <div class="middleside">
         Starlite
-        <span>$482.56</span>
+        <span><small>$</small>482.56</span>
       </div>
 
     <div class="downside">
-
+        Add to Card
     </div>
 
   </div>
