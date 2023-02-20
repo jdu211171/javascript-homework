@@ -1,18 +1,24 @@
-import product from "../database/product.json" assert {type: "json"}
+import product from "../database/newproduct.json" assert {type: "json"}
 
 localStorage.cart = [];
 
 for (let i = 0; i < product.length; i++) {
-    let content = document.querySelector('.content');
-    let newCard =   `<div class="card">
-                        <div class="up">
-                            <img src="./media/${product[i].img}" alt="" srcset="">
-                        </div>
-                        <div class="down">
-                            <input type="button" value="About" class="button-left">
-                            <input type="button" value="Buy" class="button-right" data-product-id="${product[i].id}">
-                        </div>
-                    </div>`;
+    let content = document.querySelector('#product');
+    let newCard =   `<div class="product-box">
+    
+    <div class="upside">
+        <img src="/media/image/ubuntu.webp" alt="image of laptop">
+    </div>
+
+        <div class="middleside">
+        Starlite
+        <span><small>$</small>482.56</span>
+        </div>
+
+    <div class="downside">
+        Add to Card
+    </div>
+</div>`;
     content.innerHTML += newCard;
 }
 
