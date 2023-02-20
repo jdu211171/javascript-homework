@@ -20,9 +20,10 @@
 body{
     background: var(--background);
     overflow-x: hidden;
+    /* overflow-y: hidden; */
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
-    
+    margin-top: 50px;
 }
 .bottom-navbar{
     display: none;
@@ -65,9 +66,11 @@ header img{
 #right-navbar{
     padding: 20px;
     width: 25%;
-    text-align: center;
     display: flex;
     flex-direction: column; 
+}
+#right-navbar p{
+    text-align: center;
 }
 aside{
    border: 1px solid white;
@@ -83,11 +86,13 @@ aside{
 .product-item{
     width: 100%;
     height: 360px;
-    border: 1px solid white;
-    border-collapse: collapse;
+    /* border: 1px solid white; */
     position: relative;
 }
-.upside img{
+.product-item .remove{
+    width: 100%;
+}
+    .upside img{
     width: 250px;
     padding-top: 10px;
     display: block;
