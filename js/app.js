@@ -16,7 +16,7 @@ for (let i = 0; i < product.length; i++) {
         </div>
 
     <div class="downside">
-        Add to Card
+        カードに追加
     </div>
 </div>`;
     content.innerHTML += newCard;
