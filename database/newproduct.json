@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "img": "ubuntu",
     "price": 482.56,
     "product_model": "StarLite",
     "cpu_model": "Intel Pentium Silver™",
@@ -14,6 +15,7 @@
   },
   {
     "id": 2,
+    "img": "zorin",
     "price": 482.56,
     "product_model": "StarBook",
     "cpu_model": "Ryzen™",
@@ -27,6 +29,7 @@
   },
   {
     "id": 3,
+    "img": "mx",
     "price": 1611.75,
     "product_model": "StarFighter",
     "cpu_model": "Intel® Core®",
@@ -40,6 +43,7 @@
   },
   {
     "id": 4,
+    "img": "mint",
     "price": 482.56,
     "product_model": "StarLite",
     "cpu_model": "Intel® Core®",
@@ -53,6 +57,7 @@
   },
   {
     "id": 5,
+    "img": "manjaro",
     "price": 1611.75,
     "product_model": "StarFighter",
     "cpu_model": "Ryzen™",
@@ -63,5 +68,19 @@
     "display_version": "16-inch",
     "battery": "18 hrs",
     "description": " The StarFighter is an exquisitely crafted, Linux-exclusive laptop that sets a new standard for privacy and performance. With its groundbreaking technology and sleek design, the StarFighter is the ultimate choice for discerning users who demand the very best.\nStar Labs StarFighter laptop\n"
+  },
+  {
+    "id": 6,
+    "img": "elementary",
+    "price": 482.56,
+    "product_model": "StarLite",
+    "cpu_model": "Intel Pentium Silver™",
+    "cpu_version": "N5030",
+    "memory_model": "2400MHz",
+    "memory_version": "8 GB",
+    "display_model": "11inch",
+    "display_version": "1080p",
+    "battery": "8 hrs",
+    "description": "Small but mighty; the perfect companion, wherever you are."
   }
 ]

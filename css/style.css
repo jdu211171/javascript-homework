@@ -48,13 +48,19 @@ header img{
     display: flex;
     justify-content: space-evenly;
 }
-.content{
-    width: 612px;
-    gap: 20px;
-    margin-right: 20px;
-}
 .container p{
     font-size: larger;
+}
+.content{
+    padding: 20px;
+}
+.content p{
+    text-align: center;
+}
+#product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 #right-navbar{
     /* background-color: grey; */

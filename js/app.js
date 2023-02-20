@@ -7,12 +7,12 @@ for (let i = 0; i < product.length; i++) {
     let newCard =   `<div class="product-box">
     
     <div class="upside">
-        <img src="/media/image/ubuntu.webp" alt="image of laptop">
+        <img src="./media/image/${product[i].img}.webp" alt="image of laptop">
     </div>
 
         <div class="middleside">
-        Starlite
-        <span><small>$</small>482.56</span>
+        ${product[i].product_model}
+        <span><small>$</small>${product[i].price}</span>
         </div>
 
     <div class="downside">
