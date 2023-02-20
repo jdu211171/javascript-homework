@@ -1,13 +1,20 @@
 import product from "../database/newproduct.json" assert {type: "json"}
 
-localStorage.cart = [];
+localStorage.cart = {
+    1 : 0,
+    2 : 0,
+    3 : 0,
+    4 : 0,
+    5 : 0,
+    6 : 0
+};
 
 for (let i = 0; i < product.length; i++) {
     let content = document.querySelector('#product');
     let newCard =   `<div class="product-box">
     
     <div class="upside">
-        <img src="./media/image/${product[i].img}.webp" alt="image of laptop">
+        <img src="./media/image/${product[i].img}.webp" alt="${product[i].product_model}">
     </div>
 
         <div class="middleside">
@@ -15,46 +22,51 @@ for (let i = 0; i < product.length; i++) {
         <span><small>$</small>${product[i].price}</span>
         </div>
 
-    <div class="downside">
+    <div class="downside" id="${product[i].id}">
         カードに追加
     </div>
 </div>`;
     content.innerHTML += newCard;
 }
 
-function showTotalPrice() {
-    let totalPrice = 0;
-    cart.forEach((item) => {
-        totalPrice += product[i].id;
-    })
-}
+// function localStorageManipulator(element, value) {
+//     let id = element.target.id;
+//     let amount = localStorage.cart[id];
+//     localStorage.cart[id] = amount++;
+// }
 
-const magazine = document.querySelector('.right-navbar');
+const magazine = document.querySelector('aside');
 
-document.querySelectorAll('.button-right').forEach(item => {
-    item.addEventListener('click', addToCard)
-});
+document.querySelectorAll('.downside').forEach(item => {
+    item.addEventListener('click', addToCard)});
+
 function addToCard(event) {
-    let id = event.target.dataset.productId;
+    let id = event.target.id;
     for(let i = 0; i < product.length; i++){
         if (id == product[i].id){
             let card = document.createElement('div');
-            card.innerHTML += `<div class="card">
-                        <div class="up">
-                            <img src="./media/${product[i].img}" alt="" srcset="">
-                        </div>
-                        <div class="down">
-                            <input type="button" value="Remove" class="remove">
-                        </div>
-                    </div>`;
+            card.innerHTML += `<div class="product-item">
+    
+            <div class="upside">
+                <img src="./media/image/${product[i].img}.webp" alt="${product[i].product_model}">
+            </div>
+        
+                <div class="middleside">
+                ${product[i].product_model}
+                <span><small>$</small>${product[i].price}</span>
+                </div>
+        
+            <div class="remove" id="${product[i].id}">
+                カードから外す
+            </div>
+        </div>`;
             magazine.append(card);
-            // localStorage.card.push(product[i].id);
 
             let remove = document.querySelectorAll('.remove');
             remove = remove[remove.length - 1];
             remove.addEventListener('click', (e) => {
                 console.log(e);
-                e.target.parentNode.parentNode.parentNode.remove();
+                e.target.parentNode.parentNode.remove();
             });
             break;
         }
